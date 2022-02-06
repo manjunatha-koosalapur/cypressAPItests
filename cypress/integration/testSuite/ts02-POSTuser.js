@@ -22,19 +22,4 @@ describe('GET user', ()=>{
         })
     })
 
-    it('test02: GET user by ID', ()=>{
-        cy.request({
-            method: 'GET',
-            url: 'https://gorest.co.in/public-api/users/3406',
-            headers: {
-                'authorization': "Bearer " + accessToken
-            }
-        }).then((response)=>{
-            expect(response.status).to.eq(200)
-            expect(response.body).to.not.be.null
-            expect(response.body.data.id).to.eq(3406)
-            expect(response.body.data.name).to.eq('Manjunath Cypress API Test')
-            })
-        })
-
 })
