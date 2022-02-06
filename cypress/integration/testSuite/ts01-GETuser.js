@@ -1,6 +1,6 @@
 ///<reference types = "Cypress" />
 
-describe('GET user', ()=>{
+describe('GET user request', ()=>{
     
     let accessToken = 'c7f0aaeacaf27a1e9d7bf666d905e49e170c53f19735ded8b0d8e2cbfa5d85fc' //we can call this in tests
 
