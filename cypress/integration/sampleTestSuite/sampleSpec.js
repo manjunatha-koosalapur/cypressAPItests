@@ -1,3 +1,5 @@
+///<reference types = "Cypress" />
+
 describe('describe block <set of test scripts>', ()=>{
     
        it('test01: Login', ()=>{
