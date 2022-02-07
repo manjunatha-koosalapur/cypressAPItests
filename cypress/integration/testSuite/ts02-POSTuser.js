@@ -4,7 +4,7 @@ describe('POST user request', ()=>{
     
     let accessToken = 'c7f0aaeacaf27a1e9d7bf666d905e49e170c53f19735ded8b0d8e2cbfa5d85fc' //we can call this in tests
 
-    it('test01: Create user', ()=>{
+    it.skip('test01: Create user', ()=>{
     cy.request({
         method: 'POST',
         url: 'https://gorest.co.in/public-api/users/',
@@ -73,7 +73,12 @@ describe('POST user request - Random User Name & Email', ()=>{
         expect(response.body.data).has.property('status','active')
         // expect(response.body).to.be.null         //intenstionally to fail the assertion
         // console.log(response)
-        cy.log(JSON.stringify(response))
+        cy.log(JSON.stringify(response))   //get details from API call response 
+        const userId = response.body.data.id   //storing user id in a variable
+        const userName = response.body.data.name //storing user name in a variable
+        const userEmail = response.body.data.email //storing user meail in a variable
+        cy.log("userID is:" + userId, "userName is:" + userName, "and userEmailID is:" + userEmail)
+
         })
     })
 
@@ -86,7 +91,7 @@ describe('POST user request- testData from fixture file', ()=>{
     
     let accessToken = 'c7f0aaeacaf27a1e9d7bf666d905e49e170c53f19735ded8b0d8e2cbfa5d85fc' //we can call this in tests
 
-    it('test03: Create user', ()=>{
+    it.skip('test03: Create user', ()=>{
     cy.request({
         method: 'POST',
         url: 'https://gorest.co.in/public-api/users/',
