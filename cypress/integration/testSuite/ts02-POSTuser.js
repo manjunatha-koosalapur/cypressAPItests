@@ -4,7 +4,7 @@ describe('POST user request', ()=>{
     
     let accessToken = 'c7f0aaeacaf27a1e9d7bf666d905e49e170c53f19735ded8b0d8e2cbfa5d85fc' //we can call this in tests
 
-    it.skip('test01: Create user', ()=>{
+    it('test01: Create user', ()=>{
     cy.request({
         method: 'POST',
         url: 'https://gorest.co.in/public-api/users/',
@@ -43,7 +43,7 @@ describe('POST user request - Random User Name & Email', ()=>{
     let testEmail = ""
     let testName = ""
 
-    it('test02: Create user', ()=>{
+    it.skip('test02: Create user', ()=>{
         var pattern = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
         for (var i = 0; i < 10; i++)
         randomText+=pattern.charAt(Math.floor(Math.random() * pattern.length));
