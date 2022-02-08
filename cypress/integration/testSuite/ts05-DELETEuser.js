@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 describe('Delete user request', () => {
- let accessToken = '007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33'
+ let accessToken = 'c7f0aaeacaf27a1e9d7bf666d905e49e170c53f19735ded8b0d8e2cbfa5d85fc'
     it('create user test', () => {
             //Create User (POST METHOD)
             cy.request({

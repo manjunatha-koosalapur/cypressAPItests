@@ -1,4 +1,5 @@
 {
+    "chromeWebSecurity": false,
+    "baseUrl": "http://coop.apps.symfonycasts.com"
 
-    
 }
